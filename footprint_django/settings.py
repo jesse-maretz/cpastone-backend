@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'footprint'
+    'footprint',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -84,6 +85,10 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
+
+# DATABASES = {}
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
