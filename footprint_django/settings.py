@@ -78,18 +78,18 @@ WSGI_APPLICATION = 'footprint_django.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'footprint',
-        'USER': 'fpuser',
-        'PASSWORD': 'fp',
-        'HOST': 'localhost'
-    }
-}
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.postgresql',
+   #     'NAME': 'footprint',
+    #    'USER': 'fpuser',
+#        'PASSWORD': 'fp',
+#        'HOST': 'localhost'
+#    }
+#}
 
-# DATABASES = {}
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+ DATABASES = {}
+ DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 
 # Password validation
